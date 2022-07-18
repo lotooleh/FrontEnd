@@ -1,0 +1,75 @@
+.main {
+    display: flex;
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.cidebar {
+    background-color: black;
+}
+
+.photo {
+    width: 400px;
+    height: 450px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contacts {
+     background-color:black;
+     color: white;
+     margin-bottom: 20px;
+     margin-left: 100px;
+
+}
+
+.contact-link {
+    color: blue;
+}
+
+.tech-skills {
+    color: white;
+    margin-left: 100px;
+
+}
+
+.aspiration { 
+    color: azure;
+    margin-left: 100px;
+
+}
+
+.main-content {
+    background-color:gainsboro;
+    box-shadow:10px 10px 20px ;
+    padding: 70px 80px;
+
+}
+
+.about {
+    color: black;
+
+}
+.about-name {margin-bottom: 10px;
+    margin-left: 60px;
+
+}
+
+.about-position {
+    margin-top: 40px;
+}
+
+.education {
+    margin-top: 40px;
+
+}
+
+.front {
+    margin-top: 60px;
+
+}
+
+.mark {
+    color: midnightblue;
+}
