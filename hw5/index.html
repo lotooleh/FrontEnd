@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+    <form method="get" action="">
+        <div class="name">
+            <div>
+                <label class="label-fname" for="First name">First name</label><br>
+                <input id="fname" name="First name" type="text">
+            </div>
+            <div>
+                <label class="label-lname" for="Last name">Last name</label><br>
+                <input id="lname" name="Last name" type="text">
+            </div>
+        </div>
+
+         <label id="label-mail" for="email">E-mail</label><br>
+         <input class="focus" id="email" name="email" type="email">
+
+         <p class="p-mail">
+            We'll never share your email with anyone else.
+         </p>
+        <div class="sex">
+            <input id="sex-name" name="sex" type="radio" checked class="radio-buttom">
+            <label id="sex-male" for="sex">Male</label>
+            <input id="sex-fname" name="sex" type="radio" class="radio-buttom" >
+            <label id="sex-female" for="sex">Female</label>
+        </div>
+        
+        <div class="country">
+            <div>
+                <label id="label-country" for="Country">Country</label><br>
+                <input id="country" name="Country" type="text" placeholder="Select">
+            </div>
+            <div>
+                <label id="label-city" for="City">City</label><br>
+                <input id="city" name="City" type="text">
+            </div>
+        </div>
+        
+        <div>
+            <button id="button" type="submit" >Sign Up</button>
+        </div>
+         
+    </form>
+      <div class="text">
+        <p>
+            By clicking the 'Sign Up' button,you confirm that you accept our <br>
+             <span class="color-blue">Terms of Use</span>  and <span class="color-blue">Privacy Policy</span>
+        </p>
+      </div>
+      <div class="line">
+        <hr>
+      </div>      
+      <div class="account">
+        <p>
+            Have an account? <span class="log-in">Log in</span> 
+        </p>
+    
+      </div>
+</body>
+</html>
