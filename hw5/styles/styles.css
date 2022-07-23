@@ -116,9 +116,14 @@ h1 {
     height: 38px;
     width: 245px;
     margin-left: 36px;
+    color: #545454;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
+    appearance: none;
+    background: url(../img/str.png) no-repeat;
+    background-position: right 5px top 50%;
     }
+    
 #label-country {
     margin-left:36px ;
     margin-top: 20px;
@@ -163,6 +168,12 @@ h1 {
     line-height: 22px;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
+    }
+    input:hover {
+        background-color: blue;
+    }
+    select:hover {
+         background-color:blue ;
     }
 
 .text {
