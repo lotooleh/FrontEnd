@@ -34,13 +34,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body {
+    
+}
+
+.wraper{
     background:#E5E5E5;
-    display: 100%;
     height: 1200px;
-    width:2100 ;
+    width:2200px;
+    margin: 0 auto;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid red; 
 }
 .container{
     float: right;
