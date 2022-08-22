@@ -1,0 +1,93 @@
+@media (max-width: 400px) {
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 190px;
+    margin-top: 0px;
+    font-size: 34px;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  .avtor__name {
+    font-size: 38px;
+    text-align: center;
+  }
+  .avtor__photo {
+    display: none;
+    margin-top: 20px;
+    width: 970px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .avtor__photo-mobil {
+    display: block;
+    width: 100%;
+    padding: 15px 15px 0px;
+  }
+  .about-me__title {
+    padding-top: 20px;
+  }
+  .about-me__text-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-me__text-2 {
+    margin-bottom: 20px;
+  }
+  .about-me__text-3 {
+    padding-bottom: 60px;
+  }
+  .skills__title {
+    padding-top: 20px;
+  }
+  .skills__row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .skills__program {
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .skills__rating {
+    padding-bottom: 10px;
+  }
+  .skills__rating-figma {
+    padding-bottom: 40px;
+  }
+  .portfolio__title {
+    padding-top: 20px;
+  }
+  .portfolio__img-1 {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .portfolio__img1-coment {
+    margin-top: 20px;
+  }
+  .portfolio__img-2 {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .portfolio__img2-coment {
+    margin-top: 20px;
+  }
+  .portfolio__img-3 {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .portfolio__img3-coment {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer__title {
+    padding-top: 30px;
+  }
+  .footer__buttom {
+    margin-top: 30px;
+  }
+  .footer__social-text {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+}

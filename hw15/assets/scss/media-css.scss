@@ -1,0 +1,107 @@
+@media (max-width: 400px) {
+.header{
+   ul{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 190px;
+    margin-top: 0px;
+    font-size: 34px;
+    gap:10px;
+    transition: 0.3s;
+   }
+   }
+.avtor{
+&__name{
+    font-size: 38px;
+    text-align: center;
+}
+&__photo{
+    display: none;
+    margin-top: 20px;
+    width:970px;
+    margin: 0 auto;
+    padding: 0 20px;   
+}
+&__photo-mobil{
+    display: block;
+    width: 100%;
+    padding: 15px 15px 0px;
+}
+   }
+.about-me{
+    
+    &__title{
+        padding-top: 20px; 
+    }
+    &__text-1{
+     margin-top: 20px;
+     margin-bottom: 20px;
+    }
+    &__text-2{
+        margin-bottom: 20px;
+       }
+    &__text-3{
+    padding-bottom: 60px;
+    }
+    }
+.skills{
+&__title{
+padding-top: 20px;
+}
+&__row{
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+&__program{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+&__rating{
+    padding-bottom: 10px;
+}
+&__rating-figma{
+    padding-bottom: 40px;
+}
+}  
+.portfolio{
+   &__title{
+   padding-top: 20px;
+   }
+   &__img-1{
+    width: 90%;
+    margin-top: 30px;
+   }
+   &__img1-coment{
+    margin-top: 20px;
+   }
+   &__img-2{
+    width: 90%;
+    margin-top: 40px;
+   }
+   &__img2-coment{
+    margin-top: 20px;
+   }
+
+   &__img-3{
+    width: 90%;
+    margin-top: 40px;
+   }
+   &__img3-coment{
+    margin-top: 20px;
+   padding-bottom: 40px;
+   }
+   }
+   .footer{
+   &__title{
+   padding-top: 30px;
+   }
+   &__buttom{
+   margin-top: 30px;
+   }
+&__social-text{
+margin-top: 30px;
+padding-bottom: 30px;
+}
+}
+}
