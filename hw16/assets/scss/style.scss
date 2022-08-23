@@ -1,0 +1,22 @@
+@import "_zero","_header";
+/*main*/
+.content{
+   &__image{
+  img{
+   max-width: 970px;
+    display: block;
+   margin: 0 auto;
+   margin-top: 40px;}
+} 
+   &__image-mobile {
+      img{
+         max-width: 317px;
+    display: none;
+   margin: 0 auto;
+   margin-top: 40px;
+      }
+   }
+}
+
+        
+   
