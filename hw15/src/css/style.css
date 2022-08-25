@@ -282,7 +282,8 @@ body {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 40px;
   color: #070707;
 }
@@ -299,7 +300,8 @@ body {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 40px;
   color: #070707;
 }
@@ -316,7 +318,8 @@ body {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 40px;
   padding-bottom: 100px;
   color: #070707;
