@@ -125,7 +125,6 @@ color: #000000;
    padding-bottom: 30px;
 }
 }
-
 .card{
    &__services{
    background: url(../../img/bg-image1.svg)center / cover no-repeat;
@@ -154,7 +153,6 @@ letter-spacing: 0.04em;
 color: #000000;
   }
 }
-
 .card{
 &__footer{
 display: flex;
@@ -233,7 +231,6 @@ padding-bottom: 30px;
 }
 }
 }
-
 @media (max-width: 768px){
    .cards{
       display: flex;
@@ -242,6 +239,5 @@ padding-bottom: 30px;
       gap: 50px;
       max-width: 420px;
       padding: 10px 10px;
-   }
-   
+}   
 }
