@@ -1,0 +1,243 @@
+@import "_zero";
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../fonts/roboto-light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url(../../fonts/bebas-neue-book.woff2);
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../fonts/bebas-neue-light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../fonts/bebas-neue-regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Bebas Neue Thin';
+    src: url(../../fonts/Bebas-Neue.ttf);
+}
+body{
+   background: #9789F9;
+}
+.cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding:20px 0;
+}
+.container{
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 100%;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #F5F3F9;
+   max-width: 370px;
+   min-height: 640px;
+   filter: drop-shadow(0px 0px 20px #8677EF); 
+   margin: 15px 15px;
+   }
+.header{
+&__image{
+      display: none;
+      position: absolute; 
+      right: 0;        
+}
+&__popular{
+   position: absolute;
+   width: 101px;
+   height: 30px;
+   background:url('../../img/tooltip bg.svg')center / cover no-repeat ;
+   left: 96%;
+top: 15px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+display: none;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+&__heading{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+}
+.heading{
+&__price{
+      position: relative;
+      font-family: 'Bebas Neue Thin';
+font-size: 60px;
+line-height: 60px;
+letter-spacing: 0.08em;
+color: #000000;
+padding: 40px 0 0;
+text-align: center;
+}
+&__price:before{
+   content:"$";
+  position: absolute;
+  left: -10px;
+width: 9px;
+height: 24px;
+font-family: 'Bebas Neue Thin';
+font-size: 24px;
+line-height: 28px;
+color: #181818;
+
+}
+&__price:after{
+   content: "/HR";
+   position: absolute;
+   left: 50px;
+   top:72px;    
+width: 21px;
+height: 16px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.08em;
+color: #000000;
+}
+&__text{
+      font-family: 'Bebas Neue Book';
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   letter-spacing: 0.04em; 
+   color: #000000;
+   padding-bottom: 30px;
+}
+}
+.card{
+   &__services{
+   background: url(../../img/bg-image1.svg)center / cover no-repeat;
+   min-height: 390px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+   }
+}
+.services{
+  &__image{
+  padding: 40px 0;
+  }
+  &__list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  }
+  &__list li{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.04em;
+color: #000000;
+  }
+}
+.card{
+&__footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}
+.footer{
+&__button{
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+width: 200px;
+height: 54px;
+background: #6FCFFB;
+border-radius: 30px;
+bottom: -44px;
+    position: relative;
+  a{
+  font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+  }  
+}
+&__discount{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #A9A9A9;
+}
+}
+.card:hover{
+   max-width: 400px;
+   min-height: 673px;
+   transition: 0,6s;
+   margin:0;
+   z-index: 1;
+.header{
+&__image{
+display: flex;
+justify-content: flex-end;
+position: absolute;
+} 
+&__popular{
+display: flex;
+z-index: 2;
+}
+}
+.heading__price{
+padding: 50px 0 0;
+}
+.heading__price:after{
+top:80px;
+}
+.heading__text{
+padding-bottom: 40px;
+}
+.footer{
+&__button{
+background:#FD8D7B;;
+bottom: 28px;
+transition:all 0.6s linear;
+}
+&__discount{
+padding-bottom: 30px;
+}
+}
+}
+@media (max-width: 768px){
+   .cards{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      max-width: 420px;
+      padding: 10px 10px;
+}   
+}
