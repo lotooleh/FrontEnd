@@ -193,40 +193,39 @@ h6 {
   margin-right: 14px;
 }
 
+.header__menu .menu__item a:focus {
+  color: rgb(23, 50, 185);
+}
+
+.header__menu .menu__item a:focus:before {
+  background: #fff;
+}
+
 .header__menu .menu__item a:hover {
   color: rgb(23, 50, 185);
 }
 
-.header__menu .menu__item a:hover:before {
-  background: #fff;
-}
-
 .header__social {
   display: flex;
-  gap: 20px;
+  width: 160px;
+  height: 40px;
+  justify-content: space-between;
 }
 
 .header__social .social__face,
 .header__social .social__twitter,
 .header__social .social__insta {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid #FFFFFF;
   border-radius: 45px;
   cursor: pointer;
-}
-
-.header__social .social__face {
-  padding: 11px 14px 9px;
-}
-
-.header__social .social__twitter {
-  padding: 11px 11px 9px;
-}
-
-.header__social .social__insta {
-  padding: 11px 12px 9px;
 }
 
 .header__social .social__face:hover {
@@ -941,31 +940,26 @@ h6 {
 
 .footer__social {
   display: flex;
-  gap: 20px;
+  width: 160px;
+  height: 40px;
+  justify-content: space-between;
   padding: 209px 0 300px;
 }
 
 .footer__social .social__face,
 .footer__social .social__twitter,
 .footer__social .social__insta {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid #FFFFFF;
   border-radius: 45px;
   cursor: pointer;
-}
-
-.footer__social .social__face {
-  padding: 11px 14px 9px;
-}
-
-.footer__social .social__twitter {
-  padding: 11px 11px 9px;
-}
-
-.footer__social .social__insta {
-  padding: 11px 12px 9px;
 }
 
 .footer__social .social__face:hover {
