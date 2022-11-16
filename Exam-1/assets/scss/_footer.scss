@@ -185,39 +185,41 @@ padding: 100px 0 0;
    &__media{
    padding-bottom: 40px;
    }
+   &__icons{
+   display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: space-between;
+   }
    &__face, &__twitter, &__insta{
-   font-size: 24px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
       color:#FFFFFF;
       box-sizing: border-box;
       border: 1px solid #565656;
       background: #212353;
-   opacity: 0.1;
+      opacity: 0.1;
       border-radius: 45px;
       cursor: url(../img/cursor.svg),pointer;
    }
-   &__face{
-   padding: 11px 16px;
-   }
-   &__twitter{
-   padding: 11px 12px;
-   }
-   &__insta{
-   padding: 11px 13px;
-   }
    &__face:hover{
-   color:#3B5998;
+      color:#3B5998;
       border: 1px solid #3B5998;
       background:#FFFFFF;
       opacity: 1;
    }
    &__twitter:hover{
-   color:#00ACEE;
+      color:#00ACEE;
       border: 1px solid #00ACEE;
       background:#FFFFFF;
       opacity: 1;
    }
    &__insta:hover{
-   color:#C13584;
+      color:#C13584;
       border: 1px solid #C13584;
       background:#FFFFFF;
       opacity: 1;
@@ -258,15 +260,6 @@ color: #212353;
    &__list li{
    font-size: 26px;
    }
-&__icons{
-   display: flex;
-   flex-direction: column;
-   gap: 5px;
-   align-items: center;
-}
-&__icons a{
-      font-size: 36px;
-}
 }
 }
 }
@@ -319,14 +312,17 @@ padding: 50px 0 0;
    }
 .content{
    &__nav{
-   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    .nav{
    &__title{
-   font-size: 20px;
+   font-size: 30px;
+   padding: 0 0 10px
    }
    &__list li{
    font-weight: 500;
-   font-size: 22px;
+   font-size: 24px;
    }
 &__media{
    padding-bottom: 20px;
