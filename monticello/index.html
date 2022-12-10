@@ -269,17 +269,21 @@
                   </div>
                 </div>
                 <div class="form__content">
-                    <form action="/#" method="get" name="myForm" onsubmit="return validateForm()">
-                      <div class="content__name">
-                        <input class="content__name-input" type="text" id="name" name="fname" placeholder="Name">
-                      </div>
-                      <div class="content__email">
-                        <input class="content__email-input" type="email" id="email" name="mail" placeholder="Email" required minlength="7">
-                      </div>
-                      <div class="content__button">
-                        <input id="submit" type="submit" value="submit">
-                      </div>
-                    </form>
+                  <form name="form" id="form">
+                    <div class="form-control">
+                      <input type="text" id="username" placeholder="Name">
+                      <i class="fa-regular fa-check-circle"></i>
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                      <input type="email" id="email" placeholder="Email" maxlength="20">
+                      <i class="fa-regular fa-check-circle"></i>
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      <small>Error message</small>
+                    </div>
+                    <button>Submit</button>
+                  </form>
                 </div>
               </div>
           </div>

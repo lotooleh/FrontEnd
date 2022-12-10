@@ -169,15 +169,6 @@ padding: 20px 0 240px;
                 }
                }
             }
-            &__social{
-              gap: 50px;
-              .social{
-              &__face, &__twitter, &__insta{
-             font-size: 24px;
-                border: 2px solid #FFFFFF;
-             }
-          }
-          }
          &__title{
         font-weight: 600;
         font-size: 60px;
@@ -208,7 +199,7 @@ padding: 20px 0 240px;
    &__social{
     .social{
     &__face, &__twitter, &__insta{
-   font-size: 30px;
+   font-size: 20px;
    }
 }
 }

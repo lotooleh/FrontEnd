@@ -862,54 +862,6 @@ h6 {
   margin: 0 60px 0 54px;
 }
 
-.contact__form .form__content input {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  padding-left: 5px;
-  width: 310px;
-  display: block;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(44, 64, 88, 0.2);
-}
-
-.contact__form .form__content input:focus {
-  border-bottom: 1px solid black;
-  color: black;
-}
-
-.contact__form .form__content .content__email {
-  margin-top: 33px;
-}
-
-.contact__form .form__content .content__button {
-  box-sizing: border-box;
-  width: 140px;
-  border: 1px solid #2C4058;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0 0 170px;
-}
-
-.contact__form .form__content .content__button input {
-  width: 140px;
-  height: 50px;
-  background: #fff;
-  padding: 10px;
-  text-transform: uppercase;
-  border-bottom: none;
-}
-
-.contact__form .form__content .content__button input:hover {
-  font-weight: 600;
-  font-size: 18px;
-  background: rgb(19, 19, 180);
-  color: #FFFFFF;
-}
-
 .footer {
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
 }
@@ -978,6 +930,91 @@ h6 {
   color: #C13584;
   border: 1px solid #C13584;
   background: #FFFFFF;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  border: 2px solid gray;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  border: 3px solid black;
+  font-weight: 600;
+}
+
+.form-control.success input {
+  border-color: rgb(31, 226, 31);
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  top: 15px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: red;
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(21, 212, 232, 0.79);
+  color: blueviolet;
+  font-weight: 600;
+  border: 3px solid blueviolet;
 }
 
 @media (max-width: 1600px) {
@@ -1158,17 +1195,6 @@ h6 {
     font-size: 18px;
   }
 
-  .header__social {
-    gap: 50px;
-  }
-
-  .header__social .social__face,
-  .header__social .social__twitter,
-  .header__social .social__insta {
-    font-size: 24px;
-    border: 2px solid #FFFFFF;
-  }
-
   .header__title {
     font-weight: 600;
     font-size: 60px;
@@ -1304,7 +1330,7 @@ h6 {
   .header__social .social__face,
   .header__social .social__twitter,
   .header__social .social__insta {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .header__title {
@@ -1366,8 +1392,7 @@ h6 {
   }
 
   .footer__social {
-    gap: 30px;
-    padding: 50px 0;
+    padding: 50px 0 80px;
   }
 
   .footer__social .social__face,
