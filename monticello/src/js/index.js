@@ -326,12 +326,53 @@ var marker = new google.maps.Marker({
 }
 window.initMap = initMap;
 
-//validation
-function validateForm() {
- let names = document.forms["myForm"]
-  ["fname"].value;
-  if (names == "") {
-    alert("no name");
-    return false;
-  }
+//validation form
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+
+checkInputs();
+});
+
+function checkInputs() {
+const usernameValue = username.value.trim();
+const emailValue = email.value.trim();
+
+if(usernameValue === '') {
+inputError(username, 'Username cannot be blank');
+}
+else {
+inputSuccess(username);
+}
+
+if (emailValue === '') {
+inputError(email, 'Email cannot be blank');
+}
+else if (!isEmail (emailValue)) {
+inputError(email, 'Email is not valid')
+}
+else {
+inputSuccess(email);
+}
+}
+
+function inputError(input,message) {
+const formControl = input.parentElement;
+const small = formControl.querySelector('small')
+small.innerText = message;
+formControl.className = 'form-control error';
+}
+
+function inputSuccess(input) {
+const formControl = input.parentElement;
+formControl.className = 'form-control success';
+}
+
+function isEmail(email) {
+return email.match(
+/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+);
 }
